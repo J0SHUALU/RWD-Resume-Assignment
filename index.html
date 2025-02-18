@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Moses | Graphic Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Joshua Moses Logo">
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <img src="assets/images/joshua-moses.jpg" alt="Joshua Moses" class="hero-image">
+            <h1>Joshua Moses</h1>
+            <p>Graphic Designer | Software Engineer In Training</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Joshua Moses, a passionate graphic designer skilled in using Canva and PicsArt. I am a BSE student at ALU where I am polishing my programming skills.<p>
+        <p id="kidFlamezText">Fun Fact: "I make music, Kid Flamez is my alter ego!"</p>
+        <button id="musicToggle">Play Music</button>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Canva Knowledge</li>
+            <li>PicsArt Knowledge</li>
+            <li>Learning JS</li>
+            <li>Learning Python</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="assets/images/alu-flyer1.jpg" alt="ALU Flier" class="project-thumbnail" onclick="openLightbox('assets/images/alu-flyer1.jpg')">
+            <p>ALU Flier Design</p>
+        </div>
+        <div class="project">
+            <img src="assets/images/alu-flyer2.jpg" alt="Canvas Design" class="project-thumbnail" onclick="openLightbox('assets/images/alu-flyer2.jpg')">
+            <p>Canva Creations</p>
+        </div>
+        <div class="project">
+            <img src="assets/images/canvas-design1.jpg" alt="Canvas Design 1" class="project-thumbnail" onclick="openLightbox('assets/images/canvas-design1.jpg')">
+            <p>Canva Design 1</p>
+        </div>
+        <div class="project">
+            <img src="assets/images/canvas-design2.jpg" alt="Canvas Design 2" class="project-thumbnail" onclick="openLightbox('assets/images/canvas-design2.jpg')">
+            <p>Canva Design 2</p>
+        </div>
+        <div class="project">
+            <img src="assets/images/canvas-design3.jpg" alt="Canvas Design 3" class="project-thumbnail" onclick="openLightbox('assets/images/canvas-design3.jpg')">
+            <p>Canva Design 3</p>
+        </div>
+        <div class="project">
+            <img src="assets/images/canvas-design4.jpg" alt="Canvas Design 4" class="project-thumbnail" onclick="openLightbox('assets/images/canvas-design4.jpg')">
+            <p>Canva Design 4</p>
+        </div>
+        <div class="project">
+            <img src="assets/images/canvas-design5.jpg" alt="Canvas Design 5" class="project-thumbnail" onclick="openLightbox('assets/images/canvas-design5.jpg')">
+            <p>Canva Design 5</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:j.moses@alustudent.com">j.moses@alustudent.com</a></p>
+        <p>GitHub: <a href="https://github.com/J0SHUALU" target="_blank">J0SHUALU</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Joshua Moses</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightboxImage" src="" alt="Full Project View">
+    </div>
+</body>
+</html>
